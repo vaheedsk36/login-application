@@ -1,3 +1,27 @@
-<%- include('header')-%>    
-<h2> Login Application</h2>
-<%-include('footer')-%>
+<%- include('header')-%>
+<div class="center-div" id="login">
+        <div class="container w-25 border py-5">
+            <div class="title pb-2">
+                <% if(locals.logout){%>
+                    <div class="alert alert-success text-center">
+                        <%= logout%>
+                    </div>
+                    <%}%>
+                        <h2 class="fw-bold">
+                            Login System
+                        </h2>
+                        <span> Log in for existing user</span>
+            </div>
+            <form action="/route/login" method="POST">
+                <div class="form-group">
+                    <input type="email" class="form-control my-1" name="email" placeholder="email">
+                    <!-- <small class="form-text text-muted text-left"> Register email address</small> -->
+                </div>
+                <div class="form-group my-3">
+                    <input type="password" class="form-control" name="password" placeholder="password">
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill my-3">Submit</button>
+            </form>
+        </div>
+    </div>
+    <%-include('footer')-%>
