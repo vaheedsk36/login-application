@@ -1,8 +1,5 @@
-## Project Name
-login-application
+## Node.js Short Project - 01
 
-## About
-
+- Project Name : ```login-application```
 - This project is a basic login application
-- The prime focus of this project was on the backend
-- Express with EJS is used in this project
+- This project is majorly focused on using EJS and Express in the backend
